@@ -4,8 +4,8 @@ const video = document.getElementById("video");
 // ======================
 // ⚠️ URL AI SERVER (NGROK)
 // ======================
-//const API_URL = "https://mabel-unsapiential-brynn.ngrok-free.dev";
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://mabel-unsapiential-brynn.ngrok-free.dev";
+//const API_URL = "http://127.0.0.1:8000";
 //  http://127.0.0.1:8000
 
 // ======================
@@ -100,3 +100,4 @@ function showIcon(symbol) {
         icon.style.display = "none";
     }, 1200);
 }
+
