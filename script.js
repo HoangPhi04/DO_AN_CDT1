@@ -78,7 +78,7 @@ function recognize() {
         })
         .then(res => res.json())
         .then(data => {
-            if (data.name !== "Unknown" && data.confidence > 0.4) {
+            if (data.name !== "Unknown" && data.door_status === "opening") {
                 showIcon("✔️");
             } else {
                 showIcon("❌");
@@ -100,4 +100,5 @@ function showIcon(symbol) {
         icon.style.display = "none";
     }, 1200);
 }
+
 
